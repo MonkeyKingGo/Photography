@@ -1,0 +1,21 @@
+#notebook > *{
+float: left;
+display: flex;
+flex-direction: column;
+height: 100%;
+flex: auto 0 0;
+}
+.leftPanel{
+    width: 20%;
+}
+.main .preview{
+    width: 40%;
+}
+textarea{
+    width: 600px;
+    height: 400px;
+}
+.leftPanel .selected{
+    background-color: aqua;
+    color: white;
+}

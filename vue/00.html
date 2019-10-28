@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8">
+    <head>
+        <script src="vue.js"></script>
+        <style>
+              #notebook > *{
+        float: left;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        flex: auto 0 0;
+        }
+        .leftPanel{
+            width: 20%;
+        }
+        .main .preview{
+            width: 40%;
+        }
+        textarea{
+            width: 600px;
+            height: 400px;
+        }
+        .leftPanel .selected{
+            background-color: aqua;
+            color: white;
+        }
+        </style>
+    </head>
+<script src="https:unpkg.com/marked@0.3.6"></script>
+
+ <link href="https://cdn.bootcss.com/material-design-icons/3.0.1/iconfont/material-icons.css" rel="stylesheet">
+    <body>
+       
+        <div id="notebook">
+            <aside class="leftPanel">
+                <div class="toolpar"><button :title="notes.length+'条笔记'" @click="addNote"><i class="material-icons">book</i>add</button></div>
+                <button @click="del(selectedNote.id)"><i class="material-icons">book</i>删除笔记</button>
+               <div class="note" v-for="note of notes" @click="selectNote(note)" :class="{selected: note.id===selectedId}">{{note.title}}</div>            
+            </aside>
+           <template v-if="selectedNote">
+             <section class="main">
+         <textarea v-model="selectedNote.content"></textarea>
+            </section>           
+            <aside v-html="notePreview" class="preview"></aside>          
+        </template>    
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
