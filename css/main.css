@@ -9,7 +9,7 @@ body, html {
 	font-family: 'Microsoft Yahei', sans-serif;
 }
 
-/*---------------------------------------------*/
+
 a {
 	font-family: 'Microsoft Yahei';
 	font-size: 14px;
@@ -31,7 +31,7 @@ a:hover {
   color: #a64bf4;
 }
 
-/*---------------------------------------------*/
+
 h1,h2,h3,h4,h5,h6 {
 	margin: 0px;
 }
@@ -50,7 +50,7 @@ ul, li {
 }
 
 
-/*---------------------------------------------*/
+
 input {
 	outline: none;
 	border: none;
@@ -85,7 +85,7 @@ textarea:-moz-placeholder { color: #adadad;}
 textarea::-moz-placeholder { color: #adadad;}
 textarea:-ms-input-placeholder { color: #adadad;}
 
-/*---------------------------------------------*/
+
 button {
 	outline: none !important;
 	border: none;
@@ -100,8 +100,7 @@ iframe {
 	border: none !important;
 }
 
-/*//////////////////////////////////////////////////////////////////
-[ Utility ]*/
+
 .txt1 {
   font-family: 'Microsoft Yahei';
   font-size: 14px;
@@ -123,8 +122,7 @@ iframe {
 
 
 
-/*//////////////////////////////////////////////////////////////////
-[ login ]*/
+
 .limiter {
   width: 100%;
   margin: 0 auto;
@@ -155,8 +153,6 @@ iframe {
 }
 
 
-/*------------------------------------------------------------------
-[ Form ]*/
 
 .login100-form {
   width: 100%;
@@ -173,8 +169,8 @@ iframe {
 
 
 
-/*------------------------------------------------------------------
-[ Input ]*/
+
+
 
 .wrap-input100 {
   width: 100%;
@@ -204,7 +200,7 @@ iframe {
 }
 
 
-/*---------------------------------------------*/
+
 .focus-input100 {
   position: absolute;
   display: block;
@@ -269,8 +265,7 @@ iframe {
 }
 
 
-/*------------------------------------------------------------------
-[ Button ]*/
+
 .container-login100-form-btn {
   display: -webkit-box;
   display: -webkit-flex;
@@ -340,8 +335,6 @@ iframe {
 }
 
 
-/*------------------------------------------------------------------
-[ Alert validate ]*/
 
 .validate-input {
   position: relative;
@@ -408,8 +401,7 @@ iframe {
 }
 
 
-/*//////////////////////////////////////////////////////////////////
-[ Social item ]*/
+
 .login100-social-item {
   font-size: 25px;
   color: #fff;
@@ -432,8 +424,7 @@ iframe {
   background-color: #333333;
 }
 
-/*//////////////////////////////////////////////////////////////////
-[ Responsive ]*/
+
 
 @media (max-width: 576px) {
   .wrap-login100 {

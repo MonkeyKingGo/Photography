@@ -2,8 +2,7 @@
     "use strict";
 
 
-     /*==================================================================
-    [ Focus input ]*/
+
     $('.input100').each(function(){
         $(this).on('blur', function(){
             if($(this).val().trim() != "") {
@@ -16,8 +15,7 @@
     })
   
   
-    /*==================================================================
-    [ Validate ]*/
+ 
     var input = $('.validate-input .input100');
 
     $('.validate-form').on('submit',function(){
